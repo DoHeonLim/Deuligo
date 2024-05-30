@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello jjj!');
+  res.send('Hello!');
 });
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
@@ -13,4 +13,3 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
-
